@@ -1,0 +1,95 @@
+
+/*
+================================================================================
+|                                    PADE-CONTENT                                |
+================================================================================
+*/
+.page__content {
+	float: right;
+	width: 870px;
+}
+
+.catalog__list {
+	// margin: 0 -10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog__item {
+	border-radius: 4px;
+	@include shadow(0 3px 7px rgba(#000, .3));
+}
+
+.catalog__img {
+	position: relative;
+	overflow: hidden;
+}
+.catalog__img-pic {
+	display: block;
+	max-width: 100%;
+}
+
+.catalog__desc {
+	background: #fff;
+	text-align: center;
+	padding: 20px;
+	font-size: 15px;
+	color: #282828;
+	position: relative;
+}
+
+
+.catalog__desc-pic {
+	background: url(../img/icons/star.png) repeat-x;
+	width: 75px;
+	height: 15px;
+	margin: 0 80px 20px;
+
+	
+}
+
+.catalog__desc-pic-star {
+	width: 60px;
+
+	&:after {
+		content: "";
+		background: url(../img/icons/star_write.png) repeat-x;
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		right: 95px;
+	}
+}
+
+.catalog__dec-title {
+	margin-bottom: 40px;
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		width: 79px;
+		border: 1px solid #dbdbdb;
+		top: 35px;
+		left: 75px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}

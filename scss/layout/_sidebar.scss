@@ -1,0 +1,72 @@
+
+/*
+================================================================================
+|                                     SIDEBAR                                  |
+================================================================================
+*/
+.sidebar{
+	background:#fbfbfb;
+	width: 270px; 
+	float: left;	
+}
+
+.filter__item {
+	border: 1px solid #e1e1e1;
+	position: relative;
+	padding: 15px 0 12px 19px;
+	border-bottom: 0px;
+
+	&:last-child {
+		border-bottom: 1px solid #e1e1e1;
+	}
+}
+
+.filter__text {
+	color: #343434;
+	font: bold 14px "Arial";
+}
+
+.filter__form {
+	position: absolute;
+	right: 6px;
+	top: 5px;
+}
+
+.filter__form-input {
+	width: 158px;
+	border: 0 none;
+	outline: none;
+	color: #464646;
+	border: 1px solid #e1e1e1;
+	padding: 10px 13px 5px;
+	background: #f3f3f3;
+	border-radius: 2px;
+	font-size: 14px;
+}
+
+
+.filter__img-pic {
+	position: absolute;
+	right: 16px;
+	top: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}
