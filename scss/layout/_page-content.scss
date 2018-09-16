@@ -74,6 +74,16 @@
 		left: 75px;
 	}
 }
+
+.catalog__dec-title {
+	@include open_sans(regular);
+}
+
+.catalog__dec-price {
+	@include open_sans(bold);
+}
+
+
 @media screen and (max-width: 1200px) {
 	
 }
