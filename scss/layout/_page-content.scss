@@ -16,14 +16,22 @@
 }
 
 .catalog__item {
+	position: relative;
 	border-radius: 4px;
-	@include shadow(0 3px 7px rgba(#000, .3));
+	// @include shadow(0 3px 7px rgba(#000, .3));
+	border: 1px solid #eaeaea;
+
+	&:hover {
+		border: 1px solid #c2e8f0;
+		box-shadow: 3px 7px 12px rgba(#48b3cb, 0.3);		
+	}
 }
 
 .catalog__img {
 	position: relative;
 	overflow: hidden;
 }
+
 .catalog__img-pic {
 	display: block;
 	max-width: 100%;
@@ -43,9 +51,7 @@
 	background: url(../img/icons/star.png) repeat-x;
 	width: 75px;
 	height: 15px;
-	margin: 0 80px 20px;
-
-	
+	margin: 0 80px 20px;	
 }
 
 .catalog__desc-pic-star {
@@ -64,25 +70,47 @@
 .catalog__dec-title {
 	margin-bottom: 40px;
 	position: relative;
+	@include open_sans(regular);
 
 	&:after {
 		content: "";
 		position: absolute;
 		width: 79px;
-		border: 1px solid #dbdbdb;
+		height: 1px;
+		background: #dbdbdb;
 		top: 35px;
 		left: 75px;
 	}
-}
 
-.catalog__dec-title {
-	@include open_sans(regular);
+	&:hover {
+		color: #23a2be;
+	}
 }
 
 .catalog__dec-price {
 	@include open_sans(bold);
 }
 
+.catalog__new, .catalog__hit {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 11px;
+	@include open_sans(semibold);
+	display: block;
+	border-radius: 2px;
+	position: absolute;
+	top: 11px;
+	left: 13px;
+}
+
+.catalog__new {
+	padding: 10px 3px 9px 6px;
+	background: #48b3cb;
+}
+.catalog__hit {
+	padding: 10px 7px 7px 9px;
+	background: #ffae2e;
+}
 
 @media screen and (max-width: 1200px) {
 	
