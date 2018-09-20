@@ -67,7 +67,7 @@ h3{
 
 
 /* loader */
-.loaded .main-wrapper{visibility:hidden;}
+
 .icon-load{
 	background: url(../img/content/loader.gif) no-repeat left top;
 	width:40px;
@@ -89,7 +89,7 @@ h3{
 |                                     CONTENT                                 |
 ================================================================================
 */
-.content{	
+.main-wrapper {	
 	min-width: $min-width;
 	text-align:left;
     width: 100%;
@@ -126,6 +126,49 @@ ul {
 }
 
 
+
+/*
+================================================================================
+|                                     SLIDESHOW                                 |
+================================================================================
+*/
+
+.slider {
+	position: relative;
+}
+
+.slider__list-wrap {
+	width: 870px;
+	overflow: hidden;
+	height: 840px;
+}
+
+.slider__list {
+	@extend %clearfix;
+	width: 2000px;
+	position: relative;
+	left: 0;
+	transition:.3s;
+}
+
+.slider__item {
+	float: left;
+}
+
+.slider__control {
+	position: relative;
+	text-align: center;
+}
+.slider__controls-button {
+	position: absolute;
+	bottom: -60px;
+}
+.slider__controls-prev {
+	margin-right: 50px;
+}
+.slider__controls-next {
+	margin-left: 50px;
+}
 
 @media screen and (max-width: 1200px) {
 	
