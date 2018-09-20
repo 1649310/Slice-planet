@@ -104,7 +104,7 @@ h3{
 .title {
 	font-size: 30px;
 	color: #2b2b2b;
-	@include comfortaa(bold);
+	font: bold 30px "Comfortaa";
 }
 
 .head {
@@ -164,10 +164,16 @@ ul {
 	bottom: -60px;
 }
 .slider__controls-prev {
+	background: url("../img/icons/arrow_right.png");
+	width: 6px;
+	height: 10px;
 	margin-right: 50px;
 }
 .slider__controls-next {
 	margin-left: 50px;
+	background: url("../img/icons/arrow_left.png");
+	width: 6px;
+	height: 10px;
 }
 
 @media screen and (max-width: 1200px) {
