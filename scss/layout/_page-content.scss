@@ -69,7 +69,8 @@
 .catalog__dec-title {
 	margin-bottom: 40px;
 	position: relative;
-	@include open_sans(regular);
+    font-family: sans-serif; 
+    @include open_sans(regular);
 
 	&:after {
 		content: "";
@@ -93,7 +94,8 @@
 .catalog__new, .catalog__hit {
 	text-transform: uppercase;
 	color: #fff;
-	font-size: 11px;
+    font-size: 11px;
+    font-family: sans-serif; 
 	@include open_sans(semibold);
 	display: block;
 	border-radius: 2px;

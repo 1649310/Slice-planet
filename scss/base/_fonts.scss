@@ -47,7 +47,7 @@
 
 @mixin open_sans($style: regular) {
 	@if $style == semibold {
-        font-family: 'opensans-semibold';
+        font-family: 'open_sanssemibold';
 	}
     @if $style == bold {
         font-family: 'open_sansbold';
