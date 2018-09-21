@@ -135,6 +135,7 @@ ul {
 
 .slider {
 	position: relative;
+
 }
 
 .slider__list-wrap {
@@ -144,14 +145,15 @@ ul {
 }
 
 .slider__list {
-	@extend %clearfix;
+ 	@extend %clearfix;
 	width: 2000px;
 	position: relative;
 	left: 0;
 	transition:.3s;
-}
+ }
 
 .slider__item {
+	margin-bottom: 45px;
 	float: left;
 }
 
@@ -162,7 +164,7 @@ ul {
 
 .slider__controls-button {
 	position: absolute;
-	bottom: -60px;
+    bottom: -60px;
 	width: 38px;
 	height: 38px;
 	border: 1px solid #dbdbdb;
