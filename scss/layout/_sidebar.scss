@@ -13,75 +13,83 @@
 .filter__item {
 	border: 1px solid #e1e1e1;
 	position: relative;
-	padding: 15px 19px 12px;
 	border-bottom: 0px;
 
 	&:last-child {
 		border-bottom: 1px solid #e1e1e1;
-		padding: 0px;
+		
+	}
+
+	&:before {
+		content: "";
+		background: url("../img/icons/arrow.png");
+		width: 10px;
+		height: 6px;
+		position: absolute;
+		right: 16px;
+		top: 18px;
+		z-index: 1;
+
 	}
 }
 
 .filter__text {
-	color: #343434;
 	font: bold 14px "Arial";
-}
+	padding: 15px 19px 12px;
+	display: block;
 
-.filter__form {
+} 
+
+.filter__form-input {
+	appearance: none;
+	border: 1px solid #e1e1e1;
+	background: #f3f3f3;
+	outline: none;
+	padding: 10px 13px 6px;
 	position: absolute;
 	right: 6px;
 	top: 5px;
-}
-
-.filter__form-input {
-	width: 158px;
-	border: 0 none;
-	outline: none;
-	color: #464646;
-	border: 1px solid #e1e1e1;
-	padding: 10px 13px 5px;
-	background: #f3f3f3;
 	border-radius: 2px;
+	width: 158px;
+	font-family: 'open_sansregular';
 	font-size: 14px;
+	color: #464646;
+	line-height: 1.1;
 }
 
-
-.filter__img {
-	background: url("../img/icons/arrow.png");
-	width: 10px;
-	height: 6px;
-	position: absolute;
-	right: 16px;
-	top: 18px;
+.dropdown {
+	height: 178px;
+	overflow: auto;
+}
+.dropdown::-webkit-scrollbar {
+	width: 3px;
+	background-color: #93deff;
+	height: 65px;
 }
 
-.dropdown__link {
-	display: block;
-	padding: 8px 10px 8px 30px;
-	color: #444;
-	font: 500 13px "Arial";
+.dropdown__item {
+	padding-top: 15px;
+	color: #464646;
+	font: 400 13px "Arial";
+	padding-left: 28px;
 
+	&:last-child {
+		padding-bottom: 15px;
+	}
 	&:first-child {
-		padding: 0px;
+		border-top: 1px solid #e1e1e1;
+	}
+	label + input[type="checkbox"]:checked {
+		color: #36a8bf;
 	}
 }
 
-.dropdown__link-active {
-	color: #48b3cb;
-	border-right: 3px solid #93deff;    
-}
-.dropdown__item-first {
-	padding: 13px 19px;
-	border-bottom: 1px solid #e1e1e1;
-}
-.dropdown__item-bottom {
-	text-align: center;
-	border-top: 1px solid #e1e1e1;
+.filter__link {
+	color: #36a8bf;
+	font: 400 13px "Arial";
+	display: block;
 	padding: 13px 0;
-}
-
-.dropdown__link-color {
-	color: #48b3cb;
+	text-align: center;	
 }
 
 @media screen and (max-width: 1200px) {

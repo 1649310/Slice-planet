@@ -49,7 +49,7 @@ h1{
 h2{
 	@include font($font-size-h2,$line-height-h2,$title-color);
 	font-family: $title-font-family;
-	padding: 45px 0 22px 0;
+	padding: 45px 0 20px 0;
 	font-weight: 400;	
 }
 h3{
@@ -105,6 +105,7 @@ h3{
 	font-size: 30px;
 	color: #2b2b2b;
 	font: bold 30px "Comfortaa";
+
 }
 
 .head {
@@ -112,7 +113,9 @@ h3{
 	font-size: 16px;
 	text-transform: uppercase;
 	color: #363636;
+	margin-left: 28px;
 }
+
 * {
 	box-sizing: border-box;
 }
@@ -135,31 +138,29 @@ ul {
 
 .slider {
 	position: relative;
-
+	margin-bottom: 170px;
 }
 
 .slider__list-wrap {
-	width: 870px;
+	width: 926px;
 	overflow: hidden;
 	height: 870px;
 }
 
 .slider__list {
  	@extend %clearfix;
-	width: 2000px;
+	width: 9000px;
 	position: relative;
 	left: 0;
 	transition:.3s;
  }
 
 .slider__item {
-	margin-bottom: 45px;
 	float: left;
 }
 
 .slider__control {
 	position: relative;
-	text-align: center;
 }
 
 .slider__controls-button {
