@@ -37,10 +37,10 @@
 
 					<aside class="sidebar">
 						<ul class="filter">
-							<li class="filter__item">
+							<li class="filter__item filter__item-img">
 								<div class="filter__text">Категории</div>
 							</li>
-							<li class="filter__item">
+							<li class="filter__item filter__item-img">
 								<div class="filter__text">Размер</div>
 								<select class="filter__form-input">
 									<option>56</option>
@@ -57,34 +57,48 @@
 									<input class="filter__form-input" type="text">
 								</div>
 							</li>
-							<li class="filter__item">
+							<li class="filter__item filter__item-img">
 								<div class="filter__text">Материал</div>
-								<ul class="dropdown">
-									<li class="dropdown__item">
-										<label>
-											<input checked type="checkbox"/>Все</label>
-									</li>
-									<li class="dropdown__item">
-										<label>
-											<input class="dropdown__active" type="checkbox" checked/>100% хлопок</label>
-									</li>
-									<li class="dropdown__item">
-										<label>
-											<input class="dropdown__item-chek" type="checkbox" checked/>Трикотаж</label>
-									</li>
-									<li class="dropdown__item">
-										<label>
-											<input class="dropdown__item-chek" type="checkbox"/>Шерсть</label>
-									</li>
-									<li class="dropdown__item">
-										<label>
-											<input class="dropdown__item-chek" type="checkbox"/>Джинсовый</label>
-									</li>
-									<li class="dropdown__item">
-										<label>
-											<input class="dropdown__item-chek" type="checkbox"/>Составной</label>
-									</li>
-								</ul>
+								<div class="filter__dropdown">
+									<ul class="dropdown">
+										<li class="dropdown__item">
+											<label>
+												<input class="dropdown__item-checkbox" type="checkbox"/>
+												<span class="dropdown__item-text">Все</span>
+											</label>
+										</li>
+										<li class="dropdown__item">
+											<label>
+												<input class="dropdown__item-checkbox" type="checkbox"/>
+												<span class="dropdown__item-text">100% хлопок</span>
+											</label>
+										</li>
+										<li class="dropdown__item">
+											<label>
+												<input class="dropdown__item-checkbox" type="checkbox"/>
+												<span class="dropdown__item-text">Трикотаж</span>
+											</label>
+										</li>
+										<li class="dropdown__item">
+											<label>
+												<input class="dropdown__item-checkbox" type="checkbox"/>
+												<span class="dropdown__item-text">Шерсть</span>
+											</label>
+										</li>
+										<li class="dropdown__item">
+											<label>
+												<input class="dropdown__item-checkbox" type="checkbox"/>
+												<span class="dropdown__item-text">Джинсовый</span>
+											</label>
+										</li>
+										<li class="dropdown__item">
+											<label>
+												<input class="dropdown__item-checkbox" type="checkbox"/>
+												<span class="dropdown__item-text">Составной</span>
+											</label>
+										</li>
+									</ul>
+								</div>	
 							</li>
 							<li class="filter__item">
 								<div class="filter__item-link">
@@ -97,14 +111,64 @@
 							<!-- PAGE-CONTENT -->
 					
 					<main class="page__content">
-						
-							<!-- SLIDESHOW -->
 
-						<div class="slider">
-							<div class="slider__list-wrap">
+						<div class="catalog">
+							<ul class="catalog__list">
+								<li class="catalog__item">
+									<a href="#" class="catalog__link">
+										<div class="catalog__img">
+											<img src="img/catalog/pullover.png" class="catalog__img-pic">
+										</div>
+										<div class="catalog__desc">
+											<div class="catalog__desc-pic"></div>
+											<div class="catalog__dec-title">Cвитер в полоску</div>
+											<div class="catalog__dec-price">123 грн</div>
+										</div>
+										<div class="catalog__new">Новинка</div>
+									</a>
+								</li>
+								<li class="catalog__item">
+									<a href="#" class="catalog__link">
+										<div class="catalog__img">
+											<img src="img/catalog/dress.png" class="catalog__img-pic">
+										</div>
+										<div class="catalog__desc">
+											<div class="catalog__desc-pic catalog__desc-pic-star"></div>
+											<div class="catalog__dec-title">Платье с цветочным принтом</div>
+											<div class="catalog__dec-price">123 грн</div>
+														</div>
+										<div class="catalog__hit">хит продаж</div>
+									</a>
+								</li>
+								<li class="catalog__item">
+									<a href="#" class="catalog__link">
+										<div class="catalog__img">
+											<img src="img/catalog/denim.png" class="catalog__img-pic">
+										</div>
+										<div class="catalog__desc">
+											<div class="catalog__desc-pic catalog__desc-pic-star"></div>
+											<div class="catalog__dec-title">Джинсовый комбинезон</div>
+											<div class="catalog__dec-price">123 грн</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Похожие товары  -->
+
+						<div class="catalog__similar">
+							<div class="catalog__similar-head">
+								<h2 class="head">
+									Похожие товары
+								</h2>
+							</div>
+
+							<!-- SLIDESHOW -->
+							<div class="slider">
 								<ul class="slider__list">
 
-									<li class="slider__item active">
+									<li class="slider__item">
 										<div class="catalog">
 											<ul class="catalog__list">
 												<li class="catalog__item">
@@ -117,55 +181,6 @@
 															<div class="catalog__dec-title">Cвитер в полоску</div>
 															<div class="catalog__dec-price">123 грн</div>
 														</div>
-														<div class="catalog__new">Новинка</div>
-													</a>
-												</li>
-												<li class="catalog__item">
-													<a href="#" class="catalog__link">
-														<div class="catalog__img">
-															<img src="img/catalog/dress.png" class="catalog__img-pic">
-														</div>
-														<div class="catalog__desc">
-															<div class="catalog__desc-pic catalog__desc-pic-star"></div>
-															<div class="catalog__dec-title">Платье с цветочным принтом</div>
-															<div class="catalog__dec-price">123 грн</div>
-														</div>
-														<div class="catalog__hit">хит продаж</div>
-													</a>
-												</li>
-												<li class="catalog__item">
-													<a href="#" class="catalog__link">
-														<div class="catalog__img">
-															<img src="img/catalog/denim.png" class="catalog__img-pic">
-														</div>
-														<div class="catalog__desc">
-															<div class="catalog__desc-pic catalog__desc-pic-star"></div>
-															<div class="catalog__dec-title">Джинсовый комбинезон</div>
-															<div class="catalog__dec-price">123 грн</div>
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-
-										<!-- Похожие товары  -->
-										<div class="catalog__similar">
-											<div class="catalog__similar-head">
-												<h2 class="head">
-													Похожие товары
-												</h2>
-											</div>
-											<ul class="catalog__list">
-												<li class="catalog__item">
-													<a href="#" class="catalog__link">
-														<div class="catalog__img">
-															<img src="img/catalog/pullover.png" class="catalog__img-pic">
-														</div>
-														<div class="catalog__desc">
-															<div class="catalog__desc-pic"></div>
-															<div class="catalog__dec-title">Cвитер в полоску</div>
-															<div class="catalog__dec-price">123 грн</div>
-														</div>
 													</a>
 												</li>
 												<li class="catalog__item">
@@ -184,16 +199,15 @@
 													<a href="#" class="catalog__link">
 														<div class="catalog__img">
 															<img src="img/catalog/denim.png" class="catalog__img-pic">
-														</div>
-														<div class="catalog__desc">
-															<div class="catalog__desc-pic catalog__desc-pic-star"></div>
-															<div class="catalog__dec-title">Джинсовый комбинезон</div>
-															<div class="catalog__dec-price">123 грн</div>
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
+													</div>
+													<div class="catalog__desc">
+														<div class="catalog__desc-pic catalog__desc-pic-star"></div>
+														<div class="catalog__dec-title">Джинсовый комбинезон</div>
+														<div class="catalog__dec-price">123 грн</div>
+													</div>
+												</a>
+											</li>
+										</ul>
 									</li>
 
 									<li class="slider__item">
@@ -209,53 +223,6 @@
 															<div class="catalog__dec-title">Cвитер в полоску</div>
 															<div class="catalog__dec-price">123 грн</div>
 														</div>
-														<div class="catalog__new">Новинка</div>
-													</a>
-												</li>
-												<li class="catalog__item">
-													<a href="#" class="catalog__link">
-														<div class="catalog__img">
-															<img src="img/catalog/dress.png" class="catalog__img-pic">
-														</div>
-														<div class="catalog__desc">
-															<div class="catalog__desc-pic catalog__desc-pic-star"></div>
-															<div class="catalog__dec-title">Платье с цветочным принтом</div>
-															<div class="catalog__dec-price">123 грн</div>
-														</div>
-														<div class="catalog__hit">хит продаж</div>
-													</a>
-												</li>
-												<li class="catalog__item">
-													<a href="#" class="catalog__link">
-														<div class="catalog__img">
-															<img src="img/catalog/denim.png" class="catalog__img-pic">
-														</div>
-														<div class="catalog__desc">
-															<div class="catalog__desc-pic catalog__desc-pic-star"></div>
-															<div class="catalog__dec-title">Джинсовый комбинезон</div>
-															<div class="catalog__dec-price">123 грн</div>
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-										<div class="catalog__similar">
-											<div class="catalog__similar-head">
-												<h2 class="head">
-													Похожие товары
-												</h2>
-											</div>
-											<ul class="catalog__list">
-												<li class="catalog__item">
-													<a href="#" class="catalog__link">
-														<div class="catalog__img">
-															<img src="img/catalog/pullover.png" class="catalog__img-pic">
-														</div>
-														<div class="catalog__desc">
-															<div class="catalog__desc-pic"></div>
-															<div class="catalog__dec-title">Cвитер в полоску</div>
-															<div class="catalog__dec-price">123 грн</div>
-														</div>
 													</a>
 												</li>
 												<li class="catalog__item">
@@ -274,16 +241,15 @@
 													<a href="#" class="catalog__link">
 														<div class="catalog__img">
 															<img src="img/catalog/denim.png" class="catalog__img-pic">
-														</div>
-														<div class="catalog__desc">
-															<div class="catalog__desc-pic catalog__desc-pic-star"></div>
-															<div class="catalog__dec-title">Джинсовый комбинезон</div>
-															<div class="catalog__dec-price">123 грн</div>
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
+													</div>
+													<div class="catalog__desc">
+														<div class="catalog__desc-pic catalog__desc-pic-star"></div>
+														<div class="catalog__dec-title">Джинсовый комбинезон</div>
+														<div class="catalog__dec-price">123 грн</div>
+													</div>
+												</a>
+											</li>
+										</ul>
 									</li>
 
 									<li class="slider__item">
@@ -299,55 +265,6 @@
 															<div class="catalog__dec-title">Cвитер в полоску</div>
 															<div class="catalog__dec-price">123 грн</div>
 														</div>
-														<div class="catalog__new">Новинка</div>
-													</a>
-												</li>
-												<li class="catalog__item">
-													<a href="#" class="catalog__link">
-														<div class="catalog__img">
-															<img src="img/catalog/dress.png" class="catalog__img-pic">
-														</div>
-														<div class="catalog__desc">
-															<div class="catalog__desc-pic catalog__desc-pic-star"></div>
-															<div class="catalog__dec-title">Платье с цветочным принтом</div>
-															<div class="catalog__dec-price">123 грн</div>
-														</div>
-														<div class="catalog__hit">хит продаж</div>
-													</a>
-												</li>
-												<li class="catalog__item">
-													<a href="#" class="catalog__link">
-														<div class="catalog__img">
-															<img src="img/catalog/denim.png" class="catalog__img-pic">
-														</div>
-														<div class="catalog__desc">
-															<div class="catalog__desc-pic catalog__desc-pic-star"></div>
-															<div class="catalog__dec-title">Джинсовый комбинезон</div>
-															<div class="catalog__dec-price">123 грн</div>
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-
-										<!-- Похожие товары  -->
-										<div class="catalog__similar">
-											<div class="catalog__similar-head">
-												<h2 class="head">
-													Похожие товары
-												</h2>
-											</div>
-											<ul class="catalog__list">
-												<li class="catalog__item">
-													<a href="#" class="catalog__link">
-														<div class="catalog__img">
-															<img src="img/catalog/pullover.png" class="catalog__img-pic">
-														</div>
-														<div class="catalog__desc">
-															<div class="catalog__desc-pic"></div>
-															<div class="catalog__dec-title">Cвитер в полоску</div>
-															<div class="catalog__dec-price">123 грн</div>
-														</div>
 													</a>
 												</li>
 												<li class="catalog__item">
@@ -366,27 +283,25 @@
 													<a href="#" class="catalog__link">
 														<div class="catalog__img">
 															<img src="img/catalog/denim.png" class="catalog__img-pic">
-														</div>
-														<div class="catalog__desc">
-															<div class="catalog__desc-pic catalog__desc-pic-star"></div>
-															<div class="catalog__dec-title">Джинсовый комбинезон</div>
-															<div class="catalog__dec-price">123 грн</div>
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
+													</div>
+													<div class="catalog__desc">
+														<div class="catalog__desc-pic catalog__desc-pic-star"></div>
+														<div class="catalog__dec-title">Джинсовый комбинезон</div>
+														<div class="catalog__dec-price">123 грн</div>
+													</div>
+												</a>
+											</li>
+										</ul>
 									</li>
-
 								</ul>			
 							</div>
 
 									<!-- PAGINATION -->
 
-							<div class="slider__control">
+							<!-- <div class="slider__control">
 								<a class="slider__controls-button slider__controls-next" href="#"></a>
 								<a class="slider__controls-button slider__controls-prev" href="#"></a>
-							</div>
+							</div> -->
 						</div>
 					</main>
 					
@@ -402,16 +317,26 @@
 <!-- BODY EOF   -->
 	
 	<script src="js/jquery-3.0.1.min.js"></script>		
-	<script src="js/jquery-migrate-1.4.1.min.js" ></script>
+	<!-- <script src="js/jquery-migrate-1.4.1.min.js" ></script> -->
 	
 
-
+	<script src="js/components/slick.js" ></script>
 	<!--
 	<script src="js/components/jquery.fancybox.js" ></script>
 	<script src="js/components/jquery.formstyler.js" ></script>
 	<script src="js/components/slick.js" ></script>
 	<script src="js/components/jquery.mCustomScrollbar.js" ></script>
 	-->
-	<script src="js/slider.js" ></script>
+	<!-- <script src="js/slider.js" ></script> -->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.slider__item').slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 3
+		  });
+		});
+	  </script>
 </body>
 </html>

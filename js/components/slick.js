@@ -15,6 +15,10 @@
 
  */
 /* global window, document, define, jQuery, setInterval, clearInterval */
+
+
+
+
 (function(factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {
@@ -54,7 +58,7 @@
                 customPaging: function(slider, i) {
                     return '<button type="button" data-role="none" role="button" aria-required="false" tabindex="0">' + (i + 1) + '</button>';
                 },
-                dots: false,
+                dots: true,
                 dotsClass: 'slick-dots',
                 draggable: true,
                 easing: 'linear',

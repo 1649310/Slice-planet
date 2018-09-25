@@ -19,7 +19,8 @@
 		border-bottom: 1px solid #e1e1e1;
 		
 	}
-
+}
+.filter__item-img {  
 	&:before {
 		content: "";
 		background: url("../img/icons/arrow.png");
@@ -57,11 +58,11 @@
 	line-height: 1.1;
 }
 
-.dropdown {
+.filter__dropdown {
 	height: 178px;
 	overflow: auto;
 }
-.dropdown::-webkit-scrollbar {
+.filter__dropdown::-webkit-scrollbar {
 	width: 3px;
 	background-color: #93deff;
 	height: 65px;
@@ -79,9 +80,10 @@
 	&:first-child {
 		border-top: 1px solid #e1e1e1;
 	}
-	label + input[type="checkbox"]:checked {
-		color: #36a8bf;
-	}
+}
+
+.dropdown__item-checkbox:checked ~ .dropdown__item-text {
+	color: #36a8bf;
 }
 
 .filter__link {
