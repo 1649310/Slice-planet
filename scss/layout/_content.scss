@@ -49,7 +49,7 @@ h1{
 h2{
 	@include font($font-size-h2,$line-height-h2,$title-color);
 	font-family: $title-font-family;
-	padding: 45px 0 20px 0;
+	padding: 0 0 20px 0;
 	font-weight: 400;	
 }
 h3{
@@ -138,32 +138,10 @@ ul {
 
 .slider {
 	position: relative;
-	margin-bottom: 170px;
+	margin-bottom: 125px;
 }
 
-.slider__list-wrap {
-	width: 926px;
-	overflow: hidden;
-	height: 870px;
-}
-
-.slider__list {
- 	@extend %clearfix;
-	width: 9000px;
-	position: relative;
-	left: 0;
-	transition:.3s;
- }
-
-.slider__item {
-	float: left;
-}
-
-.slider__control {
-	position: relative;
-}
-
-.slider__controls-button {
+.slick-prev, .slick-next {
 	position: absolute;
     bottom: -60px;
 	width: 38px;
@@ -171,10 +149,11 @@ ul {
 	border: 1px solid #dbdbdb;
 	border-radius: 50%;
 	background: #f1f1f1;
+	font-size: 0;
 }
 
-.slider__controls-next {
-	left: 365px;
+.slick-prev {
+	left: 393px;
 	&:after {
 		content: "";
 		position: absolute;
@@ -186,8 +165,8 @@ ul {
 	}
 }
 
-.slider__controls-prev {	
-	right: 365px;
+.slick-next {	
+	right: 393px;
 	&:before {
 		content: "";
 		position: absolute;
@@ -198,9 +177,38 @@ ul {
 		left: 15px;
 	}
 }
-	
+.slick-dots {
+	position: absolute;
+	display: block;
+	text-align: center;
+	width: 100%;
+	bottom: -60px;
+}
+.slick-dots
+	li {
+		display: inline-block;
+		height: 5px;
+		width: 5px;
+		background: #dbdbdb;
+		border-radius: 50%;
+		border: none;
+		margin-left: 7px;
 
+		&:first-child {
+			margin-left: 0px;
+		}
+}
+.slick-dots 
+	button {
+		font-size: 0;
+		border: none;
+    	background: transparent;
+}
 
+.slick-dots 
+	li.slick-active	{
+	background: #e44256;
+}
 
 @media screen and (max-width: 1200px) {
 	

@@ -9,9 +9,9 @@
 }
 
 .catalog__list {
-	// margin: 0 -5px;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 45px;
 }
 
 .catalog__item {
@@ -23,9 +23,6 @@
 	&:first-child {
 		margin-left: 28px;
 	}
-	// &:last-child {
-	// 	margin-right: 5px;
-	// }
 
 	&:hover {
 		border: 1px solid #c2e8f0;

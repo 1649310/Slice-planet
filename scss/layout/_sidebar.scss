@@ -56,18 +56,37 @@
 	font-size: 14px;
 	color: #464646;
 	line-height: 1.1;
+
+	option {
+		background-color: #fbfbfb;
+		outline: none;
+	}
 }
 
-.filter__dropdown {
+.dropdown__list {
 	height: 178px;
 	overflow: auto;
+	display: none;
 }
-.filter__dropdown::-webkit-scrollbar {
+.mCSB_scrollTools .mCSB_draggerContainer {
+	right: 10px;
+	top: 15px;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
 	width: 3px;
-	background-color: #93deff;
+	background: #93deff;
+	height: 65px;
+
+	&:hover {
+		background: #fbfbfb;
+	}
+}
+.mCSB_dragger {
 	height: 65px;
 }
-
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+	background-color: #fbfbfb;
+}
 .dropdown__item {
 	padding-top: 15px;
 	color: #464646;
