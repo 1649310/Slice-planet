@@ -105,7 +105,7 @@ h3{
 	font-size: 30px;
 	color: #2b2b2b;
 	font: bold 30px "Comfortaa";
-
+	letter-spacing: -2px;
 }
 
 .head {
@@ -143,7 +143,7 @@ ul {
 
 .slick-prev, .slick-next {
 	position: absolute;
-    bottom: -60px;
+    bottom: -35px;
 	width: 38px;
 	height: 38px;
 	border: 1px solid #dbdbdb;
@@ -153,7 +153,7 @@ ul {
 }
 
 .slick-prev {
-	left: 393px;
+	left: 390px;
 	&:after {
 		content: "";
 		position: absolute;
@@ -182,7 +182,7 @@ ul {
 	display: block;
 	text-align: center;
 	width: 100%;
-	bottom: -60px;
+	bottom: -27px;
 }
 .slick-dots
 	li {

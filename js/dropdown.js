@@ -1,10 +1,10 @@
-$(".filter__item-js div").click(()=>{
+$(".filter__text-js").click(()=>{
 	$(".dropdown__list").slideToggle();
 	  $(".dropdown__list .dropdown__list").css("display","none")
   
   });
-  $(".dropdown__list .dropdown__item").click(function(){
-	$(".dropdown__list .dropdown__list").slideUp();
+  $(".dropdown__list .filter__item-js").click(function(){
+	$(".dropdown__list").slideUp();
 	$(this).find('.dropdown__list').slideToggle();
   })
   
@@ -13,4 +13,4 @@ $(".filter__item-js div").click(()=>{
 	if($(window).width()>768){
 	  $(".dropdown__list").removeAttr("style")
 	}
-  })
+  });
