@@ -1,4 +1,4 @@
-$('.filter__item-img-js').click(function (e) {
+$('.filter__text-img-js').click(function (e) {
 	
-	$('.filter__item-img-js').toggleClass('active');
+	$('.filter__text-img-js').toggleClass('active');
 });

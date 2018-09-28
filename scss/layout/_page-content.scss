@@ -5,28 +5,29 @@
 */
 .page__content {
 	float: left;
-	width: 926px;
+	width: rem(926px);
 }
 
 .catalog__list {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 45px;
+	flex-wrap: wrap;
+	margin-bottom: rem(45px);
 }
 
 .catalog__item {
 	position: relative;
-	border-radius: 4px;
-	margin-right: 28px;
+	border-radius: rem(4px);
+	margin-right: rem(28px);
 	border: 1px solid #eaeaea;
 
 	&:first-child {
-		margin-left: 28px;
+		margin-left: rem(28px);
 	}
 
 	&:hover {
 		border: 1px solid #c2e8f0;
-		box-shadow: 0px 5px 12px 2px  rgba(#48b3cb, 0.3);		
+		box-shadow: 0px rem(5px) rem(12px) rem(2px)  rgba(#48b3cb, 0.3);		
 	}
 }
 
@@ -43,8 +44,8 @@
 .catalog__desc {
 	background: #fff;
 	text-align: center;
-	padding: 20px;
-	font-size: 15px;
+	padding: rem(20px);
+	font-size: re(15px);
 	color: #282828;
 	position: relative;
 }
@@ -52,26 +53,26 @@
 
 .catalog__desc-pic {
 	background: url(../img/icons/star.png) repeat-x;
-	width: 75px;
-	height: 15px;
-	margin: 0 78px 20px;	
+	width: rem(75px);
+	height: rem(15px);
+	margin: 0 rem(78px) rem(20px);	
 }
 
 .catalog__desc-pic-star {
-	width: 60px;
+	width: rem(60px);
 
 	&:after {
 		content: "";
 		background: url(../img/icons/star_write.png) repeat-x;
-		width: 15px;
-		height: 15px;
+		width: rem(15px);
+		height: rem(15px);
 		position: absolute;
-		right: 95px;
+		right: rem(95px);
 	}
 }
 
 .catalog__dec-title {
-	margin-bottom: 40px;
+	margin-bottom: rem(40px);
 	position: relative;
     font-family: sans-serif; 
     @include open_sans(regular);
@@ -79,11 +80,11 @@
 	&:after {
 		content: "";
 		position: absolute;
-		width: 79px;
-		height: 1px;
+		width: rem(79px);
+		height: rem(1px);
 		background: #dbdbdb;
-		top: 35px;
-		left: 75px;
+		top: rem(35px);
+		left: rem(75px);
 	}
 
 	&:hover {
@@ -98,22 +99,22 @@
 .catalog__new, .catalog__hit {
 	text-transform: uppercase;
 	color: #fff;
-    font-size: 11px;
+    font-size: rem(11px);
     font-family: sans-serif; 
 	@include open_sans(semibold);
 	display: block;
-	border-radius: 2px;
+	border-radius: rem(2px);
 	position: absolute;
-	top: 11px;
-	left: 13px;
+	top: rem(11px);
+	left: rem(13px);
 }
 
 .catalog__new {
-	padding: 10px 4px 8px;
+	padding: rem(10px) rem(4px) rem(8px);
 	background: #48b3cb;
 }
 .catalog__hit {
-	padding: 7px 6px 9px;
+	padding: rem(7px) rem(6px) rem(9px);
 	background: #ffae2e;
 }
 

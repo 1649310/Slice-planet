@@ -6,7 +6,7 @@
 */
 .sidebar{
 	background:#fbfbfb;
-	width: 270px; 
+	width: rem(270px); 
 	float: left;	
 }
 
@@ -20,21 +20,21 @@
 		
 	}
 }
-.filter__item-img {  
+.filter__text-img {  
 	&:before {
 		content: "";
 		background: url("../img/icons/arrow.png");
-		width: 10px;
-		height: 6px;
+		width: rem(10px);
+		height: rem(6px);
 		position: absolute;
-		right: 18px;
-		top: 16px;
+		right: rem(18px);
+		top: rem(16px);
 		z-index: 1;
 
 	}
 }
 
-.filter__item-img-js.active {
+.filter__text-img-js.active {
 	&:before {
 		transform: rotate(180deg);
 		transition: transform .3s;
@@ -42,8 +42,8 @@
 }
 
 .filter__text {
-	font: bold 14px "Arial";
-	padding: 12px 18px;
+	font: bold rem(14px) "Arial";
+	padding: rem(12px) rem(18px);
 	display: block;
 }
 
@@ -56,54 +56,55 @@
 	border: 1px solid #e1e1e1;
 	background: #f3f3f3;
 	outline: none;
-	padding: 6px 11px;
+	padding: rem(6px) rem(11px);
 	position: absolute;
-	right: 7px;
-	top: 5px;
+	right: rem(7px);
+	top: rem(5px);
 	border-radius: 2px;
-	width: 158px;
+	width: rem(158px);
 	font-family: 'open_sansregular';
-	font-size: 14px;
+	font-size: rem(14px);
 	color: #464646;
 	line-height: 1.1;
 
 	option {
 		background-color: #fbfbfb;
 		outline: none;
+		transition: transform .3s;
 	}
 }
 
 .dropdown__list {
-	height: 178px;
+	height: rem(178px);
 	overflow: auto;
 	display: none;
 }
 .mCSB_scrollTools .mCSB_draggerContainer {
-	right: 10px;
-	top: 15px;
+	right: rem(10px);
+	top: rem(15px);
 }
 .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-	width: 3px;
+	width: rem(3px);
 	background: #93deff;
-	height: 65px;
+	height: rem(65px);
 
 }
 
 .mCSB_dragger {
-	height: 65px;
+	height: rem(65px);
 
 }
 .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
 	background-color: #fbfbfb;
 }
 .dropdown__item {
-	padding-top: 12px;
+	padding-top: rem(12px);
 	color: #464646;
-	font: 400 13px "Arial";
-	padding-left: 17px;
+	font: 400 rem(13px) "Arial";
+	padding-left: rem(17px);
 
 	&:last-child {
-		padding-bottom: 15px;
+		padding-bottom: rem(15px);
 	}
 }
 
@@ -113,9 +114,9 @@
 
 .filter__link {
 	color: #36a8bf;
-	font: 400 13px "Arial";
+	font: 400 rem(13px) "Arial";
 	display: block;
-	padding: 11px 0;
+	padding: rem(11px) 0;
 	text-align: center;	
 }
 

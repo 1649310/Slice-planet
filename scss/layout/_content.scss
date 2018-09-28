@@ -1,6 +1,10 @@
 
 //main styles
 
+html {
+	font-size: 16px;
+}
+
 .main-wrapper{
 	padding: 0 0 0 0;
 	min-width: $min-width;
@@ -21,15 +25,15 @@
     -ms-flex-pack: start;
 }
 .wrapper{
-	min-width: $min-width;
+	// min-width: $min-width;
 	max-width: $max-width;
-	padding: 0 40px 0 40px;
 	margin: 0 auto;
 	position: relative;
 }
 
 .container {
 	width: $container-width;
+	max-width: 1200px;
 	margin: 0 auto;
 	position: relative;
 	@extend %clearfix;
@@ -37,50 +41,44 @@
 /* titles */
 p{	
 	@include font($base-font-size,$base-line-height,$text-color);
-	padding: 15px 0 15px 0;
+	padding: rem(15px) 0 rem(15px) 0;
 	font-weight: 400;	
 }
 h1{	
 	@include font($font-size-h1,$line-height-h1,$title-color);
 	font-family: $title-font-family;
-	padding: 47px 0 42px 0;
+	padding: rem(47px) 0 rem(42px) 0;
 	font-weight: 400;	
 }
 h2{
 	@include font($font-size-h2,$line-height-h2,$title-color);
 	font-family: $title-font-family;
-	padding: 0 0 20px 0;
+	padding: 0 0 rem(20px) 0;
 	font-weight: 400;	
 }
 h3{
 	@include font($font-size-h3,$line-height-h3,$title-color);
 	font-family: $title-font-family;
-	padding: 15px 0 15px 0;
+	padding: rem(15px) 0 rem(15px) 0;
 	font-weight: 400;
 }
-
-/* text position */
-.text-left{text-align: left!important}
-.text-center{text-align: center!important}
-.text-right{text-align: right!important}
-.nowrap{white-space: nowrap!important;}
 
 
 /* loader */
 
 .icon-load{
 	background: url(../img/content/loader.gif) no-repeat left top;
-	width:40px;
-	height:40px;
-	position:fixed;
-	left:50%;
-	top:50%;
-	margin-left:-20px;
-	margin-left:-20px;
-	display:none;
+	width: rem(40px);
+	height: rem(40px);
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: rem(-20px);
+	margin-left: rem(-20px);
+	display: none;
 }
 .loaded .icon-load{
-	display:block;
+	display: block;
 }
 
 
@@ -102,18 +100,18 @@ h3{
 }
 
 .title {
-	font-size: 30px;
+	font-size: rem(30px);
 	color: #2b2b2b;
-	font: bold 30px "Comfortaa";
-	letter-spacing: -2px;
+	font: bold rem(30px) "Comfortaa";
+	letter-spacing: rem(-2px);
 }
 
 .head {
 	@include open_sans(regular);
-	font-size: 16px;
+	font-size: rem(16px);
 	text-transform: uppercase;
 	color: #363636;
-	margin-left: 28px;
+	margin-left: rem(28px);
 }
 
 * {
@@ -138,14 +136,14 @@ ul {
 
 .slider {
 	position: relative;
-	margin-bottom: 125px;
+	margin-bottom: rem(125px);
 }
 
 .slick-prev, .slick-next {
 	position: absolute;
-    bottom: -35px;
-	width: 38px;
-	height: 38px;
+    bottom: rem(-35px);
+	width: rem(38px);
+	height: rem(38px);
 	border: 1px solid #dbdbdb;
 	border-radius: 50%;
 	background: #f1f1f1;
@@ -153,28 +151,28 @@ ul {
 }
 
 .slick-prev {
-	left: 390px;
+	left: rem(390px);
 	&:after {
 		content: "";
 		position: absolute;
 		background: url("../img/icons/arrow_left.png");
-		width: 6px;
-		height: 10px;
-		top: 14px;
-		left: 15px;
+		width: rem(6px);
+		height: rem(10px);
+		top: rem(14px);
+		left: rem(15px);
 	}
 }
 
 .slick-next {	
-	right: 393px;
+	right: rem(393px);
 	&:before {
 		content: "";
 		position: absolute;
 		background: url("../img/icons/arrow_right.png");
-		width: 6px;
-		height: 10px;
-		top: 14px;
-		left: 15px;
+		width: rem(6px);
+		height: rem(10px);
+		top: rem(14px);
+		left: rem(15px);
 	}
 }
 .slick-dots {
@@ -182,17 +180,17 @@ ul {
 	display: block;
 	text-align: center;
 	width: 100%;
-	bottom: -27px;
+	bottom: rem(-27px);
 }
 .slick-dots
 	li {
 		display: inline-block;
-		height: 5px;
-		width: 5px;
+		height: rem(5px);
+		width: rem(5px);
 		background: #dbdbdb;
 		border-radius: 50%;
 		border: none;
-		margin-left: 7px;
+		margin-left: rem(7px);
 
 		&:first-child {
 			margin-left: 0px;
